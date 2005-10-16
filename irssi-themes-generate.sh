@@ -19,4 +19,5 @@ if [ ! -f irssi-themes-$snap.tar.bz2 ]; then
 	cd ..
 	tar cjf $top/irssi-themes-$snap.tar.bz2 irssi-themes-$snap
 	cd $top
+	rm -rf $tmpd
 fi
