@@ -3,10 +3,10 @@ Summary(pl):	Pakiet motywów dla Irssi
 Name:		irssi-themes
 %define	_snap 20051016
 Version:	0.%{_snap}
-Release:	0.2
+Release:	1
 License:	freeware
 Group:		Applications/Communications
-URL:		http://www.irssi.org/?page=themes
+URL:		http://www.irssi.org/themes
 Source0:	%{name}-%{_snap}.tar.bz2
 # Source0-md5:	559fce778a24fb3955524edae639d1a9
 Source1:	%{name}-generate.sh
