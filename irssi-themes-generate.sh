@@ -1,6 +1,6 @@
 #!/bin/sh
 # location for irssi themes
-url='http://www.irssi.org/themes/'
+url='http://www.irssi.org/themefiles/'
 
 # this script must reside inSOURCES dir
 set -e
@@ -15,7 +15,8 @@ if [ ! -f irssi-themes-$snap.tar.bz2 ]; then
 	cd $tmpd
 	mkdir irssi-themes-$snap
 	cd irssi-themes-$snap
-   	wget -r -np -l1 -nH --cut-dirs=1 -A theme $url
+	wget -r -np -l1 -nH --cut-dirs=1 -A theme $url
+	rmdir irssi-themes-$snap 2>/dev/null || :
 	cd ..
 	tar cjf $top/irssi-themes-$snap.tar.bz2 irssi-themes-$snap
 	cd $top
