@@ -1,5 +1,5 @@
 Summary:	Irssi themes pack
-Summary(pl):	Pakiet motywów dla Irssi
+Summary(pl.UTF-8):   Pakiet motywÃ³w dla Irssi
 Name:		irssi-themes
 %define	_snap 20060719
 Version:	0.%{_snap}
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Irssi themes pack.
 
-%description -l pl
-Pakiet motywów dla Irssi.
+%description -l pl.UTF-8
+Pakiet motywÃ³w dla Irssi.
 
 %prep
 %setup -q -n %{name}-%{_snap}
